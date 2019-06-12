@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-I use the academic kickstart to create my personnal beautiful website - guyliann.netlify.com
+I use the academic kickstart to create my personnal beautiful website - <https://guyliann.netlify.com>
 
 The initial repository is given by [George Cushen](https://georgecushen.com)
 
