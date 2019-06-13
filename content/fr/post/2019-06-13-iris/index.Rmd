@@ -34,14 +34,15 @@ iris <- read("iris", package = "datasets", lang = "fr")
 Le jeu de données comprend `r length(names(iris))` variables et `r nrow(iris)` observations. 
 i
 ```{r}
-iris %>%
-  DT::datatable(
+iris %>.%
+  DT::datatable(.,
     options = list(
       language = list(url="//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json"),
       lengthMenu = c(5,10,20,50)
       )
-    )
-
+    ) %>.%
+  widgetframe::frameWidget(.) 
+# Les datatable ne s'affichent pas correctement dasn le blog, il faut donc employer cette parade avec le package widgetframe
 ```
 
 
