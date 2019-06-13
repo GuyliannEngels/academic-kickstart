@@ -2,8 +2,8 @@
 #abstract: 
 all_day: false
 authors: [ admin,"philippe grosjean"]
-date: "2018-07-09"
-date_end: "2018-07-12"
+date: "2019-07-09"
+date_end: "2019-07-12"
 event: "useR! 2019"
 event_url: http://www.user2019.fr
 featured: false
