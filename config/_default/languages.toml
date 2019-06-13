@@ -15,20 +15,20 @@
 #  [zh.params]
 #    description = "Site description in Chinese..."
   [[fr.menu.main]]
-    name = "Acceuil"
+    name = "Accueil"
     url = "#about"
     weight = 10
   [[fr.menu.main]]
+    name = "Thématiques"
+    url = "#projects"
+    weight = 20
+  [[fr.menu.main]]
     name = "Conférence"
     url = "#talks"
-    weight = 20
+    weight = 30
   [[fr.menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 30
-  [[fr.menu.main]]
-  name = "Projets"
-  url = "#projects"
   weight = 40
   [[fr.menu.main]]
   name = "Cours"
@@ -37,4 +37,4 @@
   [[fr.menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 70
+  weight = 60

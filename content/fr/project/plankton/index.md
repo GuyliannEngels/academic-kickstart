@@ -2,7 +2,7 @@
 date: "2019-06-13"
 #external_link: ""
 image:
-  caption: Photo by rawpixel on Unsplash
+  #caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 links:
 - icon: github
