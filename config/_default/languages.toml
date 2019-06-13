@@ -28,7 +28,7 @@
   weight = 30
   [[fr.menu.main]]
   name = "Conférence"
-  url = "#talk"
+  url = "#talks"
   weight = 40
   [[fr.menu.main]]
   name = "Cours"

@@ -1,0 +1,101 @@
+---
+title: "Les Iris de la péninsule de la Gaspésie"
+summary: "Ce premier post au format Rmd a pour but de réaliser différents graphiques et tableau sur le jeu de données Iris"
+author: [admin]
+date: 2019-06-13
+categories: ["R", "BioDataScience"]
+tags: ["R", "SciViews", "BioDataScience"]
+bibliography: iris.bib
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<pre class="r"><code>SciViews::R</code></pre>
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────────────────────── SciViews::R 1.1.0 ──</code></pre>
+<pre><code>## ✔ SciViews  1.1.0        ✔ purrr     0.3.2   
+## ✔ chart     1.3.0        ✔ readr     1.3.1   
+## ✔ flow      1.0.0        ✔ tidyr     0.8.3   
+## ✔ data.io   1.2.2        ✔ tibble    2.1.1   
+## ✔ svMisc    1.1.0        ✔ ggplot2   3.1.1   
+## ✔ forcats   0.4.0        ✔ tidyverse 1.2.1   
+## ✔ stringr   1.4.0        ✔ lattice   0.20.38 
+## ✔ dplyr     0.8.0.1      ✔ MASS      7.3.51.3</code></pre>
+<pre><code>## ── Conflicts ───────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ✖ dplyr::select() masks MASS::select()</code></pre>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>L’étude porte sur les variations morphologiques des fleurs de trois espèces d’iris que sont <em>Iris setosa</em> Pall. ex Link (1820) , <em>Iris versicolor</em> L. (1753) et <em>Iris virginica</em> L.. Ces espèces appartiennent à la famille des Iridaceae. Ces trois espèces se développent dans des milieux humides.</p>
+<div class="figure">
+<img src="/img/iris.jpg" alt="photographie de Iris versicolor" style="width:50.0%" />
+<p class="caption">photographie de <strong>Iris versicolor</strong></p>
+</div>
+</div>
+<div id="materiel-et-methodes" class="section level1">
+<h1>Matériel et méthodes</h1>
+<p>Edgar Anderson <span class="citation">(1935)</span> a récolté les trois espèces d’iris en Gaspésie (Québec, Canada) en 1935 au moment de la floraison. La péninsule de Gaspésie est entourée par l’estuaire du fleuve Saint-Laurent, le golfe du Saint-Laurent et la baie des chaleurs.</p>
+<p>Cinquante plants par espèces sont prélevés afin d’étudier la biométrie de leurs fleurs. La longueur et la largeur des pétales et sépales sont mesurées (en centimètre).</p>
+</div>
+<div id="resultats" class="section level1">
+<h1>Résultats</h1>
+<pre class="r"><code># Importation des données
+iris &lt;- read(&quot;iris&quot;, package = &quot;datasets&quot;, lang = &quot;fr&quot;)</code></pre>
+<p>Le jeu de données comprend 5 variables et 150 observations.
+i</p>
+<pre class="r"><code>iris %&gt;%
+  DT::datatable(
+    options = list(
+      language = list(url=&quot;//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json&quot;),
+      lengthMenu = c(5,10,20,50)
+      )
+    )</code></pre>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>sepal_length<\/th>\n      <th>sepal_width<\/th>\n      <th>petal_length<\/th>\n      <th>petal_width<\/th>\n      <th>species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"language":{"url":"//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json"},"lengthMenu":[5,10,20,50],"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>chart(iris, sepal_length ~ sepal_width %col=% species) +
+  geom_point()</code></pre>
+<div class="figure"><span id="fig:sepal"></span>
+<img src="/fr/post/2019-06-13-iris/index_files/figure-html/sepal-1.png" alt="Variation de la longueur des sépales en fonction de la largeur des sépales de trois espèces d'iris en Gaspésie." width="672" />
+<p class="caption">
+Figure 1: Variation de la longueur des sépales en fonction de la largeur des sépales de trois espèces d’iris en Gaspésie.
+</p>
+</div>
+<p>La différence morphologique des sépales permet d’isoler <em>I.setosa</em> des deux autres espèces d’iris (Figure <a href="#fig:sepal">1</a>).</p>
+<pre class="r"><code>chart(iris, petal_length ~ petal_width %col=% species) +
+  geom_point()</code></pre>
+<div class="figure"><span id="fig:petal"></span>
+<img src="/fr/post/2019-06-13-iris/index_files/figure-html/petal-1.png" alt="Variation de la longueur des pétales en fonction de la largeur des pétales de trois espèces d'iris en Gaspésie." width="672" />
+<p class="caption">
+Figure 2: Variation de la longueur des pétales en fonction de la largeur des pétales de trois espèces d’iris en Gaspésie.
+</p>
+</div>
+<p><em>I. setosa</em> a des pétales plus courts et plus fins qu’<em>I. versicolor</em> et <em>I. virginica</em>. La différence morphologique des pétales permet d’isoler à nouveau <em>I. setosa</em> des deux autres espèces. Elle permet également d’obtenir une meilleure distinction entre <em>I.versicolor</em> et <em>I. virginica</em> que les sépales (Figure <a href="#fig:petal">2</a>).</p>
+</div>
+<div id="discussion" class="section level1">
+<h1>Discussion</h1>
+<p><em>I. setosa</em> est morphologiquement distincte des deux autres espèces comme le démontre Anderson <span class="citation">(1936)</span>. Les différences morphologiques entre <em>I.versoicolor</em> et <em>I. virginica</em> sont plus faibles.</p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Il est possible de différencier <em>I. setosa</em> de <em>I. versicolor</em> et <em>I. virginica</em> sur base de la morphologie de leurs fleurs.</p>
+</div>
+<div id="bibliographie" class="section level1 unnumbered">
+<h1>Bibliographie</h1>
+<div id="refs" class="references">
+<div id="ref-Anderson1935">
+<p>Anderson, Edgar. 1935. “The Irises of the Gaspe Peninsula.” <em>Bulletin of the American Iris Society</em> 59: 2–5.</p>
+</div>
+<div id="ref-Anderson1936">
+<p>———. 1936. “The Species Problem in Iris.” <em>Annals of the Missouri Botanical Garden</em> 23 (3). Missouri Botanical Garden Press: 457–509. <a href="https://doi.org/10.2307/2394164">https://doi.org/10.2307/2394164</a>.</p>
+</div>
+</div>
+</div>

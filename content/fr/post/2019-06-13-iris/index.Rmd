@@ -16,6 +16,7 @@ SciViews::R
 
 L'étude porte sur les variations morphologiques des fleurs de trois espèces d'iris que sont *Iris setosa* Pall. ex Link (1820) , *Iris versicolor* L. (1753) et *Iris virginica* L.. Ces espèces appartiennent à la famille des Iridaceae. Ces trois espèces se développent dans des milieux humides. 
 
+![photographie de **Iris versicolor**](/img/iris.jpg){width=50%}
 
 # Matériel et méthodes
 
@@ -25,16 +26,22 @@ Cinquante plants par espèces sont prélevés afin d'étudier la biométrie de l
 
 # Résultats
 
-
 ```{r importation}
 # Importation des données
 iris <- read("iris", package = "datasets", lang = "fr")
 ```
 
 Le jeu de données comprend `r length(names(iris))` variables et `r nrow(iris)` observations. 
+i
+```{r}
+iris %>%
+  DT::datatable(
+    options = list(
+      language = list(url="//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json"),
+      lengthMenu = c(5,10,20,50)
+      )
+    )
 
-```{r table}
-rmarkdown::paged_table(iris)
 ```
 
 
