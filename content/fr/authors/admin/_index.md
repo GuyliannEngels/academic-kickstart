@@ -18,7 +18,7 @@ organizations:
   url: "https://web.umons.ac.be/fr/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Mes recherches d'intérêts comprennent l'étude du plancton et l'écophysiologie des coraux scléractiniaires.
+bio: Mes recherches d'intérêts comprennent l'étude du plancton, l'écophysiologie des coraux scléractiniaires et la science des données biologiques.
 
 interests:
 - Biologie marine

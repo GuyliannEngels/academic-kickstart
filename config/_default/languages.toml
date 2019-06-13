@@ -32,7 +32,7 @@
   weight = 40
   [[fr.menu.main]]
   name = "Cours"
-  url = "#teaching"
+  url = "courses/"
   weight = 50
   [[fr.menu.main]]
   name = "Contact"
