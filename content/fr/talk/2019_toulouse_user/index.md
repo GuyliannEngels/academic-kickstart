@@ -17,8 +17,8 @@ links:
   url: https://twitter.com/UseR2019_Conf
 location: Toulouse, France
 math: true
-#projects:
-#- internal-project
+projects:
+- biodatascience
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
 summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie"

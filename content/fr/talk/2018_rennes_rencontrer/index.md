@@ -18,7 +18,7 @@ links:
 location: Rennes, France
 math: true
 projects:
-#- internal-project
+- biodatascience
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
 summary: "Utilisation de nouveaux outils pour améliorer l'apprentissage des étudiants en science des données à des biologistes"

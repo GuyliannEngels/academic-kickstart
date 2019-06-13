@@ -17,11 +17,11 @@ image: #the name of the image : featured.jpg/png
 #  url: https://twitter.com/UseR2019_Conf
 location: Mons, Belgique
 math: true
-#projects:
-#- internal-project
+projects:
+- corals
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-#summary: ""
+#summary: "Les récifs coralliens sont fortement menacés. La salinité est l’un des facteurs de stress."
 tags: ["coral"]
 title: "Réponses écophysiologique de Seriatopora hystrix (Dana, 1846) lors de stress hypo et hypersalin."
 #url_code: ""
