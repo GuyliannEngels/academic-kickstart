@@ -20,7 +20,7 @@ math: true
 projects:
 - biodatascience
 #slides: example
-summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
+summary: "2019-07-09 au 2019-07-12"
 tags: ["learning"]
 title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom."
 #url_code: ""

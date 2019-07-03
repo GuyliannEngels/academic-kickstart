@@ -1,9 +1,10 @@
 ---
 #abstract: 
-all_day: false
 authors: [ admin,"philippe grosjean"]
-date: "2018-07-04T00:00:00Z"
-date_end: "2018-07-06T00:00:00Z"
+#publishDate: 2017-01-01T00:00:00
+date: 2018-07-04T13:00:00
+#date_end: 2018-07-07T17:00:00
+all_day: true
 event: "Septièmes rencontres R"
 event_url: https://r2018-rennes.sciencesconf.orgg
 featured: false
@@ -19,9 +20,8 @@ location: Rennes, France
 math: true
 projects:
 - biodatascience
-#publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-summary: "Utilisation de nouveaux outils pour améliorer l'apprentissage des étudiants en science des données à des biologistes"
+summary: "2018-07-04 au 2018-07-07"
 tags: []
 title: "Introduction de nouveaux outils (learnr, Github classroom,... ) dans un cours de Science des Données Biologiques"
 #url_code: ""
@@ -32,6 +32,7 @@ url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/
 
 # Abstract
 
+Utilisation de nouveaux outils pour améliorer l'apprentissage des étudiants en science des données à des biologistes
 
 **Mots clefs :** Science des données, biologie, apprentissage, classe inversée.
 
