@@ -19,7 +19,7 @@ location: Mons, Belgique
 math: true
 projects:
 - corals
-#publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2019-07-01"
 #slides: example
 summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie"
 tags: ["coral"]
