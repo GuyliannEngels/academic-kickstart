@@ -2,8 +2,8 @@
 #abstract: 
 all_day: false
 authors: [ admin,"philippe grosjean"]
-date: "2019-07-01 12:00:00"
-date_end: "2019-07-02 14:00:00"
+date: 2019-07-01T00:00:00
+#date_end: 2019-07-12T18:00:00
 event: "useR! 2019"
 event_url: http://www.user2019.fr
 featured: false
@@ -19,7 +19,6 @@ location: Toulouse, France
 math: true
 projects:
 - biodatascience
-publishDate: "2019-06-15 12:00:00"
 #slides: example
 summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
 tags: ["learning"]
