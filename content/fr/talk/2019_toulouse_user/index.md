@@ -2,8 +2,8 @@
 #abstract:
 all_day: true
 authors: [admin, "Nadège Georges", "Raphael Conotte","Antoine Batigny", "Philippe Grosjean"]
-date: "2019-03-05"
-date_end: "2019-03-05"
+date: "2019-07-09"
+date_end: "2019-07-12"
 event: "Mardi des chercheurs 2019"
 event_url: http://hosting.umons.ac.be/aspnet/mdc2019/index.aspx
 featured: false
