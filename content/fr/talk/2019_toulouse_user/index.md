@@ -21,9 +21,9 @@ projects:
 - corals
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-#summary: "Les récifs coralliens sont fortement menacés. La salinité est l’un des facteurs de stress."
+summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie"
 tags: ["coral"]
-title: "test - Réponses écophysiologique de Seriatopora hystrix (Dana, 1846) lors de stress hypo et hypersalin."
+title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom"
 #url_code: ""
 url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/2019_user_toulouse/poster"
 #url_slides: ""
