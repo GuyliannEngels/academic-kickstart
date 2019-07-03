@@ -1,15 +1,15 @@
 ---
 #abstract: 
-all_day: false
-authors: [ admin,"philippe grosjean"]
+all_day: true
+authors: [admin,"philippe grosjean"]
 date: "2019-07-09"
 date_end: "2019-07-12"
 event: "useR! 2019"
 event_url: http://www.user2019.fr
 featured: false
-image: #the name of the image : featured.jpg/png
-  caption: 'Image credit: [**UseR! 2019**](http://www.user2019.fr)'
-  focal_point: Right
+#image: #the name of the image : featured.jpg/png
+#  caption: 'Image credit: [**UseR! 2019**](http://www.user2019.fr)'
+#  focal_point: Right
 links:
 - icon: twitter
   icon_pack: fab
@@ -21,7 +21,7 @@ projects:
 - biodatascience
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
+#summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
 tags: ["learning"]
 title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom."
 #url_code: ""
