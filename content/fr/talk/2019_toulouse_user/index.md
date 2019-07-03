@@ -21,9 +21,9 @@ projects:
 - biodatascience
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie"
+summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
 tags: ["learning"]
-title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom"
+title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom."
 #url_code: ""
 url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/2019_user_toulouse/poster"
 #url_slides: ""
