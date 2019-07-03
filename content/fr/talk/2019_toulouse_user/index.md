@@ -2,8 +2,8 @@
 #abstract: 
 all_day: false
 authors: [ admin,"philippe grosjean"]
-date: 2019-07-01T00:00:00
-#date_end: 2019-07-12T18:00:00
+date: "2019-07-09T13:00:00+02:00"
+date_end: "2019-07-12T15:00:00+02:00"
 event: "useR! 2019"
 event_url: http://www.user2019.fr
 featured: false
@@ -19,6 +19,7 @@ location: Toulouse, France
 math: true
 projects:
 - biodatascience
+publishDate: "2017-01-01T00:00:00+01:00"
 #slides: example
 summary: "2019-07-09 au 2019-07-12"
 tags: ["learning"]
