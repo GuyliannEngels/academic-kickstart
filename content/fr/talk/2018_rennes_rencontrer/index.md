@@ -2,8 +2,8 @@
 #abstract: 
 all_day: false
 authors: [ admin,"philippe grosjean"]
-date: "2018-07-04"
-date_end: "2018-07-06"
+date: "2018-07-04T00:00:00Z"
+date_end: "2018-07-06T00:00:00Z"
 event: "Septièmes rencontres R"
 event_url: https://r2018-rennes.sciencesconf.orgg
 featured: false

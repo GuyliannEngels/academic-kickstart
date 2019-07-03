@@ -1,39 +1,41 @@
 ---
-#abstract:
-all_day: true
-authors: [admin, "Nadège Georges", "Raphael Conotte","Antoine Batigny", "Philippe Grosjean"]
-date: "2019-07-09"
-date_end: "2019-07-12"
-event: "Mardi des chercheurs 2019"
-event_url: http://hosting.umons.ac.be/aspnet/mdc2019/index.aspx
+#abstract: 
+all_day: false
+authors: [ admin,"philippe grosjean"]
+date: "2019-07-01 12:00:00"
+date_end: "2019-07-02 14:00:00"
+event: "useR! 2019"
+event_url: http://www.user2019.fr
 featured: false
 image: #the name of the image : featured.jpg/png
-  caption: 'Image credit: [**Mardi des chercheurs 2019**](http://hosting.umons.ac.be/aspnet/mdc2019/index.aspx)'
+  caption: 'Image credit: [**UseR! 2019**](http://www.user2019.fr)'
   focal_point: Right
-#links:
-#- icon: twitter
-#  icon_pack: fab
-#  name: Follow
-#  url: https://twitter.com/UseR2019_Conf
-location: Mons, Belgique
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/UseR2019_Conf
+location: Toulouse, France
 math: true
 projects:
-- corals
-publishDate: "2019-07-01"
+- biodatascience
+publishDate: "2019-06-15 12:00:00"
 #slides: example
-summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie"
-tags: ["coral"]
-title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom"
+summary: "Amélioration de l'apprentissage de la science des données dans un cursus en biologie."
+tags: ["learning"]
+title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom."
 #url_code: ""
 url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/2019_user_toulouse/poster"
 #url_slides: ""
 #url_video: ""
 ---
 
-## Résumé
+Cette conférence se déroule an anglais et voici l'abstract du poster présenté durant cette événement.
 
-**Mots clés :** corail ; *S. hystrix* ; Salinité ; écophysiologie
+# Abstract
 
-Les récifs coralliens sont fortement menacés. La salinité est l’un des facteurs de stress. Le nombre de tempête est en forte augmentation. Ces événements induisent de forte variation de salinité durant quelques jours par exemple. 
+After switching to modern tools for teaching data science (<http://biodatascience-course.sciviews.org>) with R, RStudio, learnr & Github ClassRoom, a higher participation rate and better overall results were observed in comparison to the old, traditional biostatistics course. By using richer, interactive learning material, we were able to increase interest, participation and learning of undergraduate students enrolled in a biology curriculum at UMONS, Belgium. The content of the course increased by 40% without increasing the number of in-class hours (75h).
 
-Un récif artificiel en mésocosme est utilisé pour étudier l'impact d'un stress hypo (28 PSU) et hypersalin (42 PSU) de courte période sur *S. hystrix*, un scléractiniaire hermatypique. Nous avons observé une décoloration (mais pas un blanchiment) et baisse de la croissance. Le taux de croissance revient à l'état initial après les périodes des stress. De ce fait, *S. hystrix* est impacté négativement par un stress salin de courte période.
+Among tools used, a fully configured virtual machine (svbox) with preinstalled R, RStudio, Python, Jupyter, Spyder and 1346 R packages is used both in class and at home. An e-book (bookdown) is used to collect pedagogical material in a centralized place. Twenty interactive tutorials (learnr) are proposed and individual learning progression is recorded (mongodb). Individual or group assessments are provided in Github Classroom. Data wrangling, plots and reproducible workflows are emphasized using tidyverse, and R Markdown.
+
+85% of learnr exercises were finished, and a total of 187 Github repositories were created (37 students). Overall this approach was very successful with 92% success at the exam. We never got such a high success rate so far, with students that are not chiefly motivated to use a computer or to crunch numbers.
