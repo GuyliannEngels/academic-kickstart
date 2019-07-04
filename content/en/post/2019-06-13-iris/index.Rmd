@@ -1,0 +1,74 @@
+---
+title: "Les Iris de la péninsule de la Gaspésie"
+summary: "Ce premier post au format Rmd a pour but de réaliser différents graphiques et tableau sur le jeu de données Iris"
+author: [admin]
+date: 2019-06-13
+categories: ["R", "BioDataScience"]
+tags: ["R", "SciViews", "BioDataScience"]
+bibliography: iris.bib
+---
+
+```{r package}
+SciViews::R
+```
+
+# Introduction
+
+L'étude porte sur les variations morphologiques des fleurs de trois espèces d'iris que sont *Iris setosa* Pall. ex Link (1820) , *Iris versicolor* L. (1753) et *Iris virginica* L.. Ces espèces appartiennent à la famille des Iridaceae. Ces trois espèces se développent dans des milieux humides. 
+
+
+![photographie de **Iris versicolor**](/img/iris.jpg){width=50%}
+
+# Matériel et méthodes
+
+Edgar Anderson [-@Anderson1935] a récolté les trois espèces d'iris en Gaspésie (Québec, Canada) en 1935 au moment de la floraison. La péninsule de Gaspésie est entourée par l'estuaire du fleuve Saint-Laurent, le golfe du Saint-Laurent et la baie des chaleurs.
+
+Cinquante plants par espèces sont prélevés afin d'étudier la biométrie de leurs fleurs. La longueur et la largeur des pétales et sépales sont mesurées (en centimètre).
+
+# Résultats
+
+```{r importation}
+# Importation des données
+iris <- read("iris", package = "datasets", lang = "fr")
+```
+
+Le tableau de données comprend `r length(names(iris))` variables et `r nrow(iris)` observations. 
+i
+```{r}
+iris %>.%
+  DT::datatable(.,
+    options = list(
+      language = list(url="//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json"),
+      lengthMenu = c(5,10,20,50)
+      )
+    ) %>.%
+  widgetframe::frameWidget(.) 
+# Les datatable ne s'affichent pas correctement dasn le blog, il faut donc employer cette parade avec le package widgetframe
+```
+
+
+```{r sepal, fig.cap="Variation de la longueur des sépales en fonction de la largeur des sépales de trois espèces d'iris en Gaspésie."}
+chart(iris, sepal_length ~ sepal_width %col=% species) +
+  geom_point()
+```
+
+La différence morphologique des sépales permet d'isoler *I.setosa* des deux autres espèces d'iris (Figure \@ref(fig:sepal)). 
+
+```{r petal, fig.cap="Variation de la longueur des pétales en fonction de la largeur des pétales de trois espèces d'iris en Gaspésie."}
+chart(iris, petal_length ~ petal_width %col=% species) +
+  geom_point()
+```
+
+*I. setosa*  a des pétales plus courts et plus fins qu'*I. versicolor* et *I. virginica*. La différence morphologique des pétales permet d'isoler à nouveau *I. setosa* des deux autres espèces. Elle permet également d'obtenir une meilleure distinction entre  *I.versicolor* et *I. virginica* que les sépales (Figure \@ref(fig:petal)).
+
+
+# Discussion
+
+*I. setosa* est morphologiquement distincte des deux autres espèces comme le démontre Anderson [ -@Anderson1936]. Les différences morphologiques entre *I.versoicolor* et *I. virginica* sont plus faibles.
+
+
+# Conclusion
+
+Il est possible de différencier *I. setosa* de *I. versicolor* et *I. virginica* sur base de la morphologie de leurs fleurs. 
+
+# Bibliographie
