@@ -27,4 +27,8 @@ url_slides: ""
 url_video: ""
 ---
 
+La science des données se développe dans un monde submergé d’informations en tous genres. En biologie, le flux grandissant des données nécessite la maîtrise d’outils qui permettent de les analyser. L’objectif de cette série de cours, dispensés dans le cursus de biologie à la Faculté des Sciences de l’Université de Mons en Belgique, est de former nos étudiants aux techniques et bonnes pratiques qui feront partie intégrante de leur future carrière dans un contexte de science ouverte et reproductible.
+
 Pour accéder au site web lié à ce projet : <http://biodatascience-course.sciviews.org>
+
+
