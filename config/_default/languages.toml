@@ -6,12 +6,40 @@
 [en]
   languageCode = "en-us"
    contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  [en.params]
+      office_hours = """Monday to Friday 08:00 to 16:00"""
+  [[en.menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 10
+  [[en.menu.main]]
+    name = "Projects"
+    url = "#projects"
+    weight = 20
+  [[en.menu.main]]
+    name = "Talks"
+    url = "#talks"
+    weight = 30
+  [[en.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 40
+  [[en.menu.main]]
+  name = "Courses"
+  url = "courses/"
+  weight = 50
+  [[en.menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 60
 
 # Uncomment the lines below to configure your website in a second language.
 [fr]
   languageCode = "fr"
   contentDir = "content/fr"
   title = "Guyliann Engels"
+  [fr.params]
+      office_hours = """lundi au vendredi de 08:00 to 16:00"""
 #  [zh.params]
 #    description = "Site description in Chinese..."
   [[fr.menu.main]]

@@ -30,6 +30,8 @@ url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/
 #url_video: ""
 ---
 
+This poster is presented in french. 
+
 # Abstract
 
 Utilisation de nouveaux outils pour améliorer l'apprentissage des étudiants en science des données à des biologistes

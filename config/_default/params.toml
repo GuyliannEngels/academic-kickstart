@@ -55,7 +55,7 @@ phone = "+32/065.37.34.78"
 address = "Plaine de Nimy/Pentagone 3D, 8 avenue du champ de mars, 7000 Mons, Belgium"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = """lundi au vendredi 08:00 à 16:00"""
+#office_hours = """Monday to Friday 08:00 to 16:00"""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 #appointment_url = "https://calendly.com"

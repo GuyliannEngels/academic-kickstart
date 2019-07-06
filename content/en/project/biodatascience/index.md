@@ -20,15 +20,16 @@ tags:
 - "BioDataScience"
 - "Learning"
 - "Biology"
-title: "Science des données biologiques"
+title: "Biological Data Science - UMONS Course"
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
 
-La science des données se développe dans un monde submergé d’informations en tous genres. En biologie, le flux grandissant des données nécessite la maîtrise d’outils qui permettent de les analyser. L’objectif de cette série de cours, dispensés dans le cursus de biologie à la Faculté des Sciences de l’Université de Mons en Belgique, est de former nos étudiants aux techniques et bonnes pratiques qui feront partie intégrante de leur future carrière dans un contexte de science ouverte et reproductible.
+Data science is developing in a world overwhelmed by information of all kinds. In biology, the increasing flow of data requires the mastery of tools to analyze them. The objective of courses, in the biology curriculum at the Faculty of Sciences of the University of Mons in Belgium, is to train our students in techniques and best practices that will be an integral part of their future career in an open and reproducible science context.
 
-Pour accéder au site web lié à ce projet : <http://biodatascience-course.sciviews.org>
+
+For more information, see : <http://biodatascience-course.sciviews.org>
 
 

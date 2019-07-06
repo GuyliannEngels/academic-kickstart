@@ -21,7 +21,7 @@ projects:
 - corals
 #publishDate: "2017-01-01T00:00:00Z"
 #slides: example
-#summary: "Les récifs coralliens sont fortement menacés. La salinité est l’un des facteurs de stress."
+#summary: ""
 tags: ["coral"]
 title: "Ecophysiological responses of Seriatopora hystrix (Dana, 1846) to a hypo- and hypersaline stress in short time."
 url_code: "https://github.com/EcoNum/coral_salinity002"
@@ -30,7 +30,6 @@ url_pdf: "https://github.com/EcoNum/coral_salinity002/tree/master/analysis/poste
 #url_video: ""
 ---
 
-Ce congrès s'est déroulé en anglais.
 
 # Abstract
 

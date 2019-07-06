@@ -8,29 +8,28 @@ links:
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: https://github.com/EcoNum
+  url: https://github.com/SciViews/zooimage
+- #icon: chrome
+  #icon_pack: fab
+  name: Site Web
+  url: https://sharepoint1.umons.ac.be/EN2/UNIVERSITE/FACULTES/FS/SERVICES/INSTITUT_BIO/ECOLOGIE_NUMERIQUE_MILIEUX_AQUATIQUES/Pages/PLANCTON.aspx
 #slides: example
-summary: "Etudes des organismes planctoniques qui sont à la base de la chaine trophique."
+summary: "Using image analysis to study the diversity of marine plankton"
 tags:
 - Deep Learning
 - Machine Learning
 - Plankton
 - Marine Biology
-title: Diversité des organismes planctonique
+title: Diversity of marine plankton
 #url_code: ""
 #url_pdf: ""
 #url_slides: ""
 #url_video: ""
 ---
 
-Les organismes planctoniques sont à la base de la chaine trophique. En étudier leur diversité est la première étape à la compréhension de la complixité du milieu aquatique.
+Plankton, constituted by phyto-, zoo- and bacterio-/virioplankton, occupies the lowest levels of the trophic web in many marine ecosystems. Phytoplankton, represented by photoautotroph organisms, is the main primary producer in the oceans. Zooplankton is the heterotrophic part of the plankton. As such, it has a key role in transfer from those primary producers to higher trophic levels. It also takes part of a side-way recycling of organic matter in the water column, initiated by the bacterioplankton (not forgetting archaea), which is called the microbial loop. Many plankton organisms play various roles simultaneously in the ecosystem: they are mixotrophs. Ecological plankton studies are thus complex, due to the diversified and intricate ecological role of the many marine planktonic organisms.
 
-Les organismes planctoniques sont échantillonsé via différentes méthodes comme les traits de plancton verticaux et horizontaux. Les échantillons sont par la suite stockés avec une solution à base de formol.
+In our laboratory, we develop a software called Zoo/PhytoImage that analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.
 
-Anciennement, les échantillons étaient analysés par des spécialistes. Ils identifiaient et dénombraient les individus présents dans chaque échantillon. Des outils de classifications automatiques ont été mis au point afin de faciliter l’identification et le dénombrement des individus. De plus, le temps d’analyse est plus court qu’une identification manuelle.
+**For informations on the software, see  : <https://www.sciviews.org/software/zooimage/> **
 
-Les échantillons sont premièrement numérisés. Chaque image est decoupé en une série de vignettes sur lesquelles une série de variables sont mesurées. Toutes ces variables sont consignées dans des jeux de données.
-
-Les méthodes et outils employés varient pour numériser, découper et mesurer de nombreux paramètres dans l’identification et le dénombrement d’organismes planctoniques.
-
-Il est dès lors indispensable de trouver des solutions afin de comparer puis de convertir les observations obtenues par chaque méthode.

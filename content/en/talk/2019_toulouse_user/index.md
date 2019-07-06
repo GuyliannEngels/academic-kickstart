@@ -25,10 +25,11 @@ summary: "2019-07-09 au 2019-07-12"
 tags: ["learning"]
 title: "Better learning of data science in a biology curriculum by using R, RStudio, learnr & Github Classroom."
 #url_code: ""
-url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/tree/master/2019_user_toulouse/poster"
+url_pdf: "https://github.com/BioDataScience-Course/sdd_presentation/blob/master/2019_user_toulouse/poster/poster_user_2019.pdf"
 #url_slides: ""
 #url_video: ""
 ---
+
 
 
 # Abstract
