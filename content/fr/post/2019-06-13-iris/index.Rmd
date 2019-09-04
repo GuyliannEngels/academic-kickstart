@@ -60,7 +60,6 @@ chart(iris, petal_length ~ petal_width %col=% species) +
 
 *I. setosa*  a des pétales plus courts et plus fins qu'*I. versicolor* et *I. virginica*. La différence morphologique des pétales permet d'isoler à nouveau *I. setosa* des deux autres espèces. Elle permet également d'obtenir une meilleure distinction entre  *I.versicolor* et *I. virginica* que les sépales (Figure \@ref(fig:petal)).
 
-
 # Discussion
 
 *I. setosa* est morphologiquement distincte des deux autres espèces comme le démontre Anderson [ -@Anderson1936]. Les différences morphologiques entre *I.versoicolor* et *I. virginica* sont plus faibles.
